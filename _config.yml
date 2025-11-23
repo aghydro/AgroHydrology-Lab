@@ -1,5 +1,5 @@
 title: AgroHydrology Lab
 description: Climate-Resilient Agriculture & Water Management
-baseurl: ""
-url: "https://aghydro.github.io/AgroHydrology-Lab"
+baseurl: "/AgroHydrology-Lab"
+url: "https://aghydro.github.io"
 theme: minima
