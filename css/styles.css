@@ -1,0 +1,36 @@
+/* Minimal example styles. Move your inline styles here and expand as needed. */
+:root {
+  --bg: #fff;
+  --fg: #222;
+  --accent: #2b7a78;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.45;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+
+/* Header */
+.site-header { background: var(--accent); color: #fff; padding: 0.75rem 0; }
+.header-inner { display: flex; align-items: center; gap: 1rem; }
+.brand { display: inline-block; text-decoration: none; color: inherit; }
+.site-logo { height: 64px; width: auto; display: block; }
+
+/* Adjust logo at narrower widths */
+@media (max-width: 640px) {
+  .site-logo { height: 48px; }
+  .site-title { font-size: 1rem; }
+}
+
+.site-title { margin: 0; font-size: 1.5rem; }
+.site-tagline { margin: 0; opacity: 0.95; font-size: 0.95rem; }
+
+.site-nav { background: #f6f6f6; border-bottom: 1px solid #e9e9e9; }
+.site-nav ul { list-style: none; margin: 0; padding: 0.5rem 1rem; display:flex; gap:1rem; }
+.site-nav a { color: inherit; text-decoration: none; }
+.site-footer { padding: 1rem 0; background:#fafafa; border-top: 1px solid #eee; text-align:center; font-size:0.9rem; }
